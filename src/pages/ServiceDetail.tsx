@@ -19,7 +19,7 @@ export default function ServiceDetail({ title, subtitle, description, included, 
   const { t } = useLanguage();
 
   return (
-    <div className="pt-20">
+    <>
       <section className="relative min-h-[60vh] flex items-center py-24 text-white overflow-hidden">
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
@@ -135,6 +135,6 @@ export default function ServiceDetail({ title, subtitle, description, included, 
       </section>
 
       <CTASection />
-    </div>
+    </>
   );
 }

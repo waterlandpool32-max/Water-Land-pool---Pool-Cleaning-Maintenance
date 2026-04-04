@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
-import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import Home from './pages/Home';
@@ -45,7 +44,6 @@ export default function App() {
       <Router>
         <ScrollToTop />
         <div className="flex flex-col min-h-screen">
-          <Navbar />
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<ServiceDetailWrapperWithId id="cleaning" />} />
